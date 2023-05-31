@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.dice {
+    text-align: center;
+    font-size: 94px;
+    margin-top: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.roll-animation {
+    animation-name: roll;
+}
+
+@keyframes roll {
+    0%{
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+
+    100%{
+        transform: rotateY(720deg) rotateX(720deg);
+    }
+}
+
+button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: background-color 1s;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 35px;
+}
