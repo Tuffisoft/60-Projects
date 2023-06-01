@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+h1 {
+    
+    font-size: 48px;
+    font-weight: 300;
+    color: tomato;
+    margin: 45px 15px 10px 15px;
+}
+
+span {
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+button {
+    border-top: none;
+    border-right: none;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 8px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 10px;
+}
+
+#start:hover {
+    background-color: rgb(161, 235, 161);
+}
+
+#pause:hover {
+    background-color: rgb(161, 218, 235);
+}
+
+#reset:hover {
+    background-color: rgb(235, 161, 161);
+}
