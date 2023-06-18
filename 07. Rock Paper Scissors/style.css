@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #0723709f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 30px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+#rock {
+    font-size: 50px;
+}
+
+#paper {
+    font-size: 50px;
+}
+
+#scissors {
+    font-size: 50px;
+}
+
+#rock:hover {
+    border-color: rgb(255, 0, 0); 
+}
+
+#paper:hover {
+    border-color: rgb(255, 0, 0); 
+}
+
+#scissors:hover {
+    border-color: rgb(255, 0, 0); 
+}
