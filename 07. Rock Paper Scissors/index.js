@@ -1,11 +1,20 @@
 const buttons = document.querySelectorAll('button');
 
+const resultEl = document.getElementById("result")
 
+let playerScore = 0;
+let computerScore = 0;
+let drawScore = 0;
+
+const playerScoreEl = document.getElementById("your-score")
+const computerScoreEl = document.getElementById("computer-score")
+const drawEl = document.getElementById ("draw-score")
 
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        playRound(button.id, computerPlay());
+        const result = playRound(button.id, computerPlay());
+        resultEl.textContent = result
     })
 })
 
@@ -17,9 +26,22 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
-        return; "You schlingel"
-    } else if (playerSelection === 'rock' && computerSelection === 'paper') {
-        return; "You lose! Paper beats Rock"
-    }   else if (playerSelection === 'rock' && computerSelection === 'scissors') {
-
-
+        drawScore++
+        drawEl.textContent = drawScore
+        return "Idiots think alike!"
+    } else if (
+        (playerSelection === 'rock' 
+        && computerSelection === 'paper') || 
+        (playerSelection === 'paper' 
+        && computerSelection === 'rock') || 
+        (playerSelection === 'scissors' 
+        && computerSelection === 'paper')) {
+            playerScore++
+            playerScoreEl.textContent = playerScore
+        return "You win dude! " + playerSelection + " kicks " + computerSelection + " ass."
+    }   else {
+        computerScore++
+        computerScoreEl.textContent = computerScore
+        return "You lose! " + computerSelection + " beats " + playerSelection + "."
+    }
+}

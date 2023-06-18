@@ -19,6 +19,10 @@ button {
     border-radius: 15px;
 }
 
+#result {
+    font-size: 32px;
+}
+
 #rock {
     font-size: 50px;
 }
