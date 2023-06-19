@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+form input[type="text"] {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+form input[type="text"]:focus {
+    background-color: white;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(161, 196, 185);
+    border: none;
+    transition: background-color 0.4s ease;
+}
+
+button:hover {
+    background-color: rgb(192, 226, 215);
+    cursor: pointer;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin: 5px;
+}
+
+.search-result {
+    width: 30%;
+}
+
+.search-result img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform .3 ease-in-out;
+}
+
+.search-result:hover img {
+    transform: scale(1.05);
+}
+
+.search-result a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-result:hover a {
+    background-color: #a5a5a5;
+}
