@@ -39,6 +39,10 @@ button:hover {
     cursor: pointer;
 }
 
+#show-more {
+    display: none;
+}
+
 .search-results {
     display: flex;
     flex-wrap: wrap;
