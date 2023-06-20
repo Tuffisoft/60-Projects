@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgb(197, 197, 197);
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn {
+    font-family: 'Varela Round', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all .7s ease-in-out;
+}
+
+#btn:hover {
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+
+}
