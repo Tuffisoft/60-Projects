@@ -16,6 +16,11 @@ h2 {
     flex-direction: column;
 }
 
+p {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
 #btn {
     font-family: 'Varela Round', sans-serif;
     padding: 10px;
