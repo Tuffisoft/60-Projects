@@ -5,7 +5,7 @@ const options = {
     method: "GET",
     headers: {
         "X-Api-Key": apikey,
-    };
+    }
 };
 
 const apiURL = "https://api.api-ninjas.com/v1/dadjokes?limit=1";
