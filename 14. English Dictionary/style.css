@@ -10,3 +10,18 @@ body {
     flex-direction: column;
     margin: 50px;
 }
+
+input {
+    font-family: 'Diphylleia', serif;
+    padding: 10px;
+    border-radius: 10px;
+    border: .2px solid grey;
+}
+
+.meaning-container {
+    display: none;
+}
+
+audio {
+    justify-content: center;
+}
