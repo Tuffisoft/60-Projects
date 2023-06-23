@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+button {
+    padding: 10px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+    transition: all .7s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: .5px solid grey;
+    font-size: 18px
+}
+
+button:hover {
+    position: relative;
+    top: 2px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: rgb(212, 212, 212);
+    cursor: not-allowed;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.anime-container {
+    margin: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.anime-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.info-name {
+    font-size: 28px;
+}
+
+.info-link {
+    font-size: 28px;
+}
