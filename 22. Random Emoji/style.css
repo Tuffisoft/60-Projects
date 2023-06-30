@@ -1,0 +1,33 @@
+body {
+margin: 0;
+background-color: burlywood;
+}
+
+.container {
+    text-align: center;
+    border:1px coral solid;
+    padding: 100px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+p {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+button {
+    font-size: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255,.2);
+    filter: grayscale();
+    transition: filter .2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: grayscale(0);   
+}
